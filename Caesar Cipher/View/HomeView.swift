@@ -9,18 +9,9 @@ import SwiftUI
 
 struct HomeView: View {
     
-    init() {
-        //Use this if NavigationBarTitle is with Large Font
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        
-        //Use this if NavigationBarTitle is with displayMode = .inline
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.black]
-    }
-    
     var body: some View {
         NavigationView {
             ZStack {
-                Color(.black).edgesIgnoringSafeArea(.all)
                 // MARK: ScrollView
                 ScrollView(.vertical) {
                     VStack(spacing: 10) {
@@ -67,13 +58,13 @@ struct HomeView: View {
                         // MARK: FOOTER
                         HStack {
                             Text("Made with")
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                             
                             Image(systemName: "heart.fill")
                                 .foregroundColor(.red)
                             
                             Text("by Jundana")
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                         }
                         .font(.system(size: 13, weight: .semibold))
                     }
