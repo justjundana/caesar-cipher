@@ -26,7 +26,7 @@ struct HomeView: View {
                     VStack(spacing: 10) {
                         // MARK: Encrypt Words
                         NavigationLink(
-                            destination: Text("Encrypt Words"),
+                            destination: EncryptView(),
                             label: {
                                 VStack {
                                     Image(systemName: "lock.circle")
