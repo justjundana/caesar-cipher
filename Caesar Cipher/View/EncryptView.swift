@@ -32,6 +32,14 @@ struct EncryptView: View {
                             .border(Color.gray.opacity(0.7))
                             .cornerRadius(10)
                             .shadow(radius: 3)
+                            .contextMenu {
+                                Button(action: {
+                                    UIPasteboard.general.string = self._EncryptVM.output
+                                }) {
+                                    Text("Copy to clipboard")
+                                    Image(systemName: "doc.on.doc")
+                                }
+                            }
                     }
                 })
                 // MARK: Copy to Clipboard
@@ -78,12 +86,12 @@ struct EncryptView: View {
                 }, label: {
                     Spacer()
                     Text("Encrypt Your Words")
-                        .foregroundColor(.black)
-                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundColor(.white)
+                        .font(.system(size: 17, weight: .bold))
                     Spacer()
                 })
                 .padding()
-                .background(Color(.green))
+                .background(Color(.purple))
                 .cornerRadius(10)
             }
             .padding()
