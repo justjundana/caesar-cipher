@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		085EC30C26F8585000406BC0 /* Decrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085EC30B26F8585000406BC0 /* Decrypt.swift */; };
+		085EC30E26F8589700406BC0 /* DecryptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085EC30D26F8589700406BC0 /* DecryptViewModel.swift */; };
+		085EC31026F8591900406BC0 /* DecryptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085EC30F26F8591900406BC0 /* DecryptView.swift */; };
 		08A6CAA726F811A200864A98 /* Caesar_CipherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A6CAA626F811A200864A98 /* Caesar_CipherApp.swift */; };
 		08A6CAA926F811A200864A98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A6CAA826F811A200864A98 /* ContentView.swift */; };
 		08A6CAAB26F811A300864A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A6CAAA26F811A300864A98 /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		085EC30B26F8585000406BC0 /* Decrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decrypt.swift; sourceTree = "<group>"; };
+		085EC30D26F8589700406BC0 /* DecryptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptViewModel.swift; sourceTree = "<group>"; };
+		085EC30F26F8591900406BC0 /* DecryptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptView.swift; sourceTree = "<group>"; };
 		08A6CAA326F811A200864A98 /* Caesar Cipher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caesar Cipher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A6CAA626F811A200864A98 /* Caesar_CipherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caesar_CipherApp.swift; sourceTree = "<group>"; };
 		08A6CAA826F811A200864A98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 			children = (
 				08A6CAB626F8131F00864A98 /* HomeView.swift */,
 				08A6CAB826F8201F00864A98 /* EncryptView.swift */,
+				085EC30F26F8591900406BC0 /* DecryptView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				08A6CABC26F8204D00864A98 /* EncryptViewModel.swift */,
+				085EC30D26F8589700406BC0 /* DecryptViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -101,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				08A6CABE26F8205700864A98 /* Encrypt.swift */,
+				085EC30B26F8585000406BC0 /* Decrypt.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,12 +183,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				085EC30E26F8589700406BC0 /* DecryptViewModel.swift in Sources */,
 				08A6CAB926F8201F00864A98 /* EncryptView.swift in Sources */,
 				08A6CAB726F8131F00864A98 /* HomeView.swift in Sources */,
 				08A6CAA926F811A200864A98 /* ContentView.swift in Sources */,
 				08A6CABF26F8205700864A98 /* Encrypt.swift in Sources */,
 				08A6CAA726F811A200864A98 /* Caesar_CipherApp.swift in Sources */,
 				08A6CABD26F8204D00864A98 /* EncryptViewModel.swift in Sources */,
+				085EC30C26F8585000406BC0 /* Decrypt.swift in Sources */,
+				085EC31026F8591900406BC0 /* DecryptView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

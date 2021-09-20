@@ -37,7 +37,7 @@ struct HomeView: View {
                         )
                         // MARK: Decrypt Words
                         NavigationLink(
-                            destination: Text("Decrypt Words"),
+                            destination: DecryptView(),
                             label: {
                                 VStack {
                                     Image(systemName: "lock.rotation.open")
